@@ -1,0 +1,99 @@
+.menu{
+    width:100%;
+    padding:70px 0;
+ } 
+ .menu h1{
+    font-size:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center ;
+    margin-bottom: 40px;
+    
+ }
+ 
+
+
+ .menu_card{
+   background: beige;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  text-align: center;
+  width: 350px; 
+ }
+ 
+ 
+  .menu_info{
+    margin-top: -90px;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    background-color: beige;
+    border-radius: 20px;
+ } 
+ 
+ .imgg{
+    border-radius: 5px;
+    max-width: 95%;
+    height: 390px;
+    width:300px;
+    margin: 0;
+    
+    
+ }
+ .menu_card img.imgg:hover{
+    transform:scale(1.1);
+ }
+ .card h2{
+    margin-top: 10px;
+    text-align: center;
+    padding:20px;
+    
+ }
+ .card p{
+    color: beige;
+    margin:5px 0 0;
+    text-align: center;
+    padding:20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+ }
+ .menu .menu_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+
+ }
+ 
+
+ .menu .menu_box .menu_card:hover .small_card i:hover{
+    color:#fac031
+
+ }
+
+ 
+ h2{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ .menu_btn{
+    font-size: 25px;
+    background-color: beige;
+    margin-bottom: 20px;
+
+ }
+ .menu_btn:hover{
+    background-color: #c3bcbc;
+ }
+ body{
+    background-image: url(https://i.pinimg.com/564x/4b/64/fe/4b64fe1025a9f783db48968355d41951.jpg);
+    background-size: cover;
+ }
+ nav{
+   font-size: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -83px;
+}
+ 
+   
+ 

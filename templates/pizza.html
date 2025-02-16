@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: o;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://i.pinimg.com/564x/77/13/56/771356b7c24e4c3c4937d429c097154e.jpg');
+        }
+        .menu{
+            padding: 0 10px 30px 10px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto 1fr;
+            grid-gap: 30px 40px; 
+            margin-top: 40px;
+        }
+        .heading{
+            position: relative;
+            grid-column: 1/-1;
+            background-color: #ccd5ae;
+            padding: 30px 0;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .heading h2{
+            position: absolute; 
+            top: 0px; 
+            left: 50%;
+            transform: translateX(-50%); 
+             z-index: 1; 
+             margin-bottom: 50px;
+        }
+        .food-items{
+            display: grid;
+            position: relative;
+            grid-template-rows: auto 1fr;
+            gap: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px ;
+            overflow: hidden;
+            max-width: 470px;
+            max-height: 670px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0); 
+            backdrop-filter: blur(2px); 
+            overflow: hidden; 
+            padding: 20px; 
+        }
+        .food-items img{
+            position: relative;
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        .h1{
+            grid-column: 1/-1;
+            text-align: center;
+        }
+        .details{
+            padding: 20px 10px;
+            display: grid;
+            grid-template-rows: 1fr 50px;
+            grid-row-gap: 15px;
+        }
+        .details-sub{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .details-sub>h5{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        .details-sub>p{
+            font-size: 15px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+        .price{
+            text-align: right;
+        }
+        .details>p{
+            font-size:15px ;
+            line-height: 28px;
+            font-weight: 400;
+            align-self: stretch;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+        .details>button{
+            background-color: #84a98c;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            width: 180px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+        }
+        .details>button:hover{
+            background-color: darked;
+            transform: scale(1.05);
+        }
+        
+        
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #555;
+        }
+        .image-container {
+            margin: 0 10px;
+            margin-bottom: 0px; 
+            text-align: center;
+        }
+        .heading img {
+            width: 100px; 
+            height: auto; 
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .image-container:hover img {
+            transform: scale(1.2); 
+            opacity: 0.8; 
+        }
+        .images-wrapper{
+            display: flex; 
+            justify-content: center; 
+            flex-wrap: wrap; 
+            margin-bottom: 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .hover-image-container {
+             display: flex; 
+             justify-content: center; 
+             margin-top: 40px; 
+            }
+            
+        .hover-image {
+            animation: hoverAnimation 1.5s ease-in-out infinite;
+            }
+            @keyframes hoverAnimation {
+                0%, 100% {
+                    transform: translateY(0); 
+                }
+                50% {
+                    transform: translateY(-50px); 
+                 }
+            }
+
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="heading">
+            <h2 style="text-align: center; margin-bottom: 20px;">♨ Delicious Menu ♨</h2>
+            <div class="image-container">
+                <img src="ai1.png" alt="Header Image 1">
+                <div class="caption">Fresh Veggie</div>
+            </div>
+            <div class="image-container">
+                <img src="ai2.png" alt="Header Image 2">
+                <div class="caption">Margherita</div>
+            </div>
+            <div class="image-container">
+                <img src="ai3.png" alt="Header Image 3">
+                <div class="caption">Tomato&Parsley</div>
+            </div>
+            <div class="image-container">
+                <img src="ai4.png" alt="Header Image 4">
+                <div class="caption">Gourment</div>
+            </div>
+            <div class="image-container">
+                <img src="ai5.png" alt="Header Image 5">
+                <div class="caption">Veg Delight</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="menu">
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/b4/91/4b/b4914bf4f5f25b8e67380bf9b06a4815.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/11/c3/7b/11c37b071d7b297db142536c2d7cb744.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://content3.jdmagicbox.com/comp/panchkula/r9/0172px172.x172.230908001739.y5r9/catalogue/harvi-s-pizza-panchkula-pizza-outlets-r2pja8hfmm.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://content.jdmagicbox.com/comp/rajkot/x6/0281px281.x281.220318224624.a4x6/catalogue/la-pino-z-pizza-junagadh-rajkot-pizza-outlets-knb4yppvk0.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/b4/91/4b/b4914bf4f5f25b8e67380bf9b06a4815.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/11/c3/7b/11c37b071d7b297db142536c2d7cb744.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/11/c3/7b/11c37b071d7b297db142536c2d7cb744.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/11/c3/7b/11c37b071d7b297db142536c2d7cb744.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="food-items">
+            <img src="https://i.pinimg.com/564x/b4/91/4b/b4914bf4f5f25b8e67380bf9b06a4815.jpg">
+            <div class="details">
+                <div class="details_sub">
+                    <h5>Dominos</h5>
+                    <h5 class="price"> Starting from ₹89</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem accusantium quisquam
+                     non magni atque aut? Obcaecati, ratione et nostrum neque minus, veniam quaerat sint velit nihil tempora labore optio voluptatum?</p>
+                     <button>Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="hover-image-container">
+        <img src="hov.png" alt="Hover Image" class="hover-image">
+    </div>
+</div>
+</body>
+</html>

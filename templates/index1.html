@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index1.css">
+
+    
+</head>
+<body>
+    <script src="index1.js"></script>
+    <section id="Home">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+            
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="gallary.html">Gallary</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#Order">Order</a></li>
+            </ul>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <a href="sign.html" class="button">
+                    <i class="fa-solid fa-user-plus"></i> Sign Up
+                </a
+                
+
+            </div>
+            
+        </nav>
+        <div class="main">
+            <div class="men_text">
+                <h1>Get Fresh <span>Food</span><br> in an Easy Way</h1>
+            
+            <div class="main_image">
+                <img class="burger" src="burger2-removebg-preview.png">
+            </div>
+        </div>
+    </section>
+
+    <div class="about" id="About">
+        <div class="about_main">
+            <div class="image">
+                <img class="plate" src="plate-removebg-preview.png">
+            </div>
+            <div class="about_text">
+                <h1 id="t1"><span>About </span>Us</h1>
+                <h3 id="t2"> Why choose us?</h3>
+                <p id="t3"> Our restaurant for an unforgettable dining experience featuring unique dishes crafted from locally sourced ingredients. With exceptional service, a welcoming atmosphere, and a commitment to community involvement, we strive to make every visit special.”
+
+                    Incorporating these reasons into your marketing materials can help draw in customers and build a loyal following!</p>
+                
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <img id="pizza" src="pizza2.png" >
+        </div>
+        <div class="pizza2">
+            <h4>Our Signature Dish <br><span class="font">"Artisan Pizza"</span></h4>
+            <p class="para"> the heart of our menu lies our Artisan Pizza, a true labor of love that captures the essence of Italian tradition with a modern twist. Crafted with house-made dough that’s hand-stretched for the perfect chewy crust, each pizza is topped with a vibrant blend of locally sourced ingredients. From rich, tangy tomato sauce to creamy mozzarella and a symphony of fresh vegetables and savory meats, every bite is a celebration of flavor. Baked to perfection in our stone oven, our Artisan Pizza offers a delightful crunch on the outside and a soft, airy interior. Join us to savor this culinary masterpiece that has become a beloved favorite among our guests!</p>
+
+        </div>
+        
+    </div>
+
+    <div class="slidery">
+        <div class="slidesy">
+            <div class="slidey"><img src="image1.jpeg" alt="Image 1"></div>
+            <div class="slidey"><img src="image2.jpeg" alt="Image 2"></div>
+            <div class="slidey"><img src="image3.jpeg" alt="Image 3"></div>
+            <div class="slidey"><img src="image4.jpeg" alt="Image 3"></div>
+            <div class="slidey"><img src="image5.jpeg" alt="Image 3"></div>
+            
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    
+    <div class="menu" id="Menu">
+        <h1>Our<span>Menu</span></h1>
+
+        <div class="menu_box">
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/474x/e5/20/6b/e5206b3957ce4bf5fa48c216b6d7b319.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Pizza</h2>
+                <p>
+                    Pizza is a popular dish featuring a baked flatbread topped with sauce, cheese, and various toppings. Loved for its versatility, it’s perfect for any occasion!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="pizza.html" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLCuJy69l2kA9d8pddtKObu3_h9JllCKIEvw&s">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Pasta</h2>
+                <p>
+                    Pasta is a versatile Italian dish made from wheat and water, shaped into various forms. It can be served with a variety of sauces, making it a beloved favorite for any meal!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/14/78/36/147836df169b1fb3b3079bf9cf729ab2.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Burger</h2>
+                <p>
+                    Burgers are delicious sandwiches served in a bun with a variety of toppings like lettuce, tomato, cheese, and sauces. Perfect for any meal, they can be customized to suit any taste!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/1c/87/68/1c8768ff8575c44ebd1df6141987bdbe.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>French Fries</h2>
+                <p>
+                    French fries are crispy, golden potatoes, deep-fried to perfection. A favorite snack or side dish, they pair well with ketchup and a variety of dips. Enjoy the ultimate comfort food!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/56/86/36/568636f3712f62a967e9c2b3229f5318.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>North Indian</h2>
+                <p>
+                    North Indian cuisine features rich flavors and spices, with staples like naan, parathas, and curries such as butter chicken. Discover the vibrant dishes of this culinary tradition!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/9b/13/17/9b13172d8e0107197799592242f1b7b1.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Cupcakes</h2>
+                <p>
+                    Cupcakes are delightful, single-serving cakes topped with creamy frosting. Available in countless flavors, they’re perfect for a sweet snack anytime! Explore our favorite cupcake recipes! 
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/f5/2c/b7/f52cb728acddcef781488726174486e8.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Drinks</h2>
+                <p>
+                    Refreshing drinks are thirst-quenching beverages, perfect for cooling down. Enjoy options like iced teas, lemonades, smoothies, or fruit-infused waters for a revitalizing boost!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        <div class="menu_card">
+
+            <div class="menu image">
+                <img class="imgg" src="https://i.pinimg.com/236x/06/ab/9d/06ab9d411971f15ac5474615d669bc78.jpg">
+            </div>
+
+            <div class="small_card">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="menu_info">
+                <h2>Pancakes</h2>
+                <p>
+                    Pancakes are a fluffy breakfast staple made from flour, eggs, and milk. Enjoy them warm with maple syrup, fresh fruit, or savory toppings. Explore our delicious pancake recipes!
+                </p>
+                <h3>Rs.250</h3>
+                <div class="menu_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="menu_btn">Order Now</a>
+            </div>
+
+
+        </div>
+        
+
+        </div>
+        
+    </div>
+</div>
+<hr>
+<h6> Food Gallery</h6>
+<section style="display: grid; place-items:center; min-height: 60vh;">
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide1">
+            <img id="img1" src="https://i.pinimg.com/736x/7f/8a/ee/7f8aee3bb32361161fad91e13140d909.jpg" alt="1" width="100%" style="transition:transform 1s;">
+           
+        </div>
+        <div class="slide1">
+            <img id="img2" src="https://i.pinimg.com/564x/c5/6d/74/c56d74ee9f0db11f77a638b2510b1b79.jpg" alt="2" width="100%" style="transition:transform 1s;" >
+            
+        </div>
+        <div class="slide1">
+            <img id="img3" src="https://i.pinimg.com/736x/fa/4b/d8/fa4bd8de16ab8da76735d2f76c81e2f1.jpg" alt="3" width="100%" style="transition:transform 1s;">
+            
+        </div>
+        <div class="slide1">
+            <img id="img4" src="https://i.pinimg.com/564x/f7/21/ea/f721ea553ef32711631de8ec446816c9.jpg" alt="4" width="100%" style="transition:transform 1s;">
+            
+        </div>
+        <div class="slide1">
+            <img id="img5" src="https://i.pinimg.com/474x/87/dc/5c/87dc5c8e8e7d4c215b75fac74abfe599.jpg" alt="5" width="100%" style="transition:transform 1s;">
+           
+        </div>
+        <div class="slide1">
+            <img id="img6" src="https://i.pinimg.com/736x/1a/61/6e/1a616eae6a550fb1a9a6da18362d505a.jpg" alt="6" width="100%" style="transition:transform 1s;">
+            
+        </div>
+        <div class="slide1">
+            <img id="img7" src="https://i.pinimg.com/736x/e0/25/a8/e025a8a7047be30231c45b2ac1308955.jpg" alt="7" height="385px" style="transition:transform 1s;">
+            
+        </div>
+        <div class="slide1">
+            <img id="img8" src="https://i.pinimg.com/564x/23/cb/73/23cb736f9d8a815a3365ca8a90aad643.jpg" alt="8" width="100%" style="transition:transform 1s;">
+           
+        </div>
+        <div class="slide1">
+            <img id="img9" src="https://i.pinimg.com/564x/a9/14/a1/a914a1fd5994a1997154155256d751cc.jpg" alt="9" width="100%" style="transition:transform 1s;">
+           
+        </div>
+        </div>
+    </div>
+    </section>
+    <div class="conty" id="Reviews">
+        <div class="conty_left">
+            <h1 id="t1"> Read what our customers love about us!</h1>
+            <p> Food Studio is a convenient food order website that connects you with a variety of local restaurants, making it easy to satisfy your cravings. With an extensive menu selection ranging from classic comfort foods to gourmet dishes, you can find something for every taste. Our platform prioritizes user experience, allowing for seamless browsing and quick ordering..</p>
+            <p>Experience the joy of dining at home with our reliable delivery service. Enjoy real-time tracking of your orders and secure online payment options, ensuring your meals arrive fresh and on time. Whether it's a cozy night in or a gathering with friends, we are here to make your food experience delightful and hassle-free.</p>
+            <!-- <button>Read our success story</button> -->
+        </div>
+        <div class="conty_right">
+            <div class="cardt">
+                <img src="p1.jpeg" alt="user"  />
+                <div class="cardt_content">
+                    <span><i class="fa fa-quote-left"></i></span>
+                    <div class="cardt_details">
+                        <p>  I recently ordered from Food Studio, and I was blown away! The pizza was fresh, hot, and loaded with toppings.
+                             Delivery was quick, and the driver was super friendly. I’ll definitely be back for more!
+                             </p>
+                        <h4>-namem name</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cardt">
+                <img src="p2.jpeg" alt="user"  />
+                <div class="cardt_content">
+                    <span><i class="fa fa-quote-left"></i></span>
+                    <div class="cardt_details">
+                        <p> Absolutely loved my experience at Food Studio! The burgers are juicy and flavorful, and the fries were crispy and delicious.
+                             The staff was welcoming and made me feel right at home. Highly recommend for anyone craving a great meal!
+                        </p>
+                        <h4>-namem name</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="cardt">
+                <img src="p3.jpeg" alt="user"  />
+                <div class="cardt_content">
+                    <span><i class="fa fa-quote-left"></i></span>
+                    <div class="cardt_details">
+                        <p>  I can't recommend Food Studio enough! The sushi was incredibly fresh, and the presentation was beautiful.
+                             The staff was attentive, and the atmosphere was perfect for a dinner night. Can’t wait to return!</p>
+                        <h4>-namem name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function signupFunction() {
+        alert("Sign Up button clicked!"); // Replace with actual sign-up logic
+    }
+</script>
+
+
+</body>
+</html

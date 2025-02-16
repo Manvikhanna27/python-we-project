@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://i.pinimg.com/564x/70/36/25/7036255456c28d24937ce523f9bf6bf2.jpg);
+    background-size: cover;
+}
+
+.signup-container {
+    background-color: beige;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    width: 500px;
+    margin-left: 90px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    margin: 10px 0 5px;
+    display: block;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(75, 75, 4) ;;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#thali{
+    height: 80%;
+    margin-left: 90px;
+}
