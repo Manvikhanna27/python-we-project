@@ -12,7 +12,7 @@ class User(db.Model):
     username = db.Column(db.String(150), unique=True, nullable=False)
     email = db.Column(db.String(150), unique=True, nullable=False)
     password = db.Column(db.String(200), nullable=False)
-    role = db.Column(db.String(50), nullable=False)  # New column for user roles
+    role = db.Column(db.String(50), nullable=False)  
 
 @app.route('/')
 def home():
@@ -28,7 +28,6 @@ def signup():
         password = generate_password_hash(request.form.get('password'), method='pbkdf2:sha256')
         role = request.form.get('role')
 
-       
         existing_user = User.query.filter_by(username=username).first()
         existing_email = User.query.filter_by(email=email).first()
         
@@ -68,9 +67,16 @@ def logout():
     session.pop('role', None)
     return redirect(url_for('login'))
 
+@app.route('/users')
+def users():
+    if 'user_id' not in session or session['role'] != 'admin':  # Only allow admins to view users
+        return "Access Denied!"
+
+    all_users = User.query.all()
+    return render_template('users.html', users=all_users)
+
+
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()  # Ensure the database is created if it doesn't exist
+        db.create_all() 
     app.run(debug=True)
-
-
